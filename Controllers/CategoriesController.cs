@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Project_2.Models;
+using CMPG_PROEJCT_2__31493432.Models;
 using Microsoft.AspNetCore.Authorization;
+
 //using JWTAuthentication.Authentication;
 
 namespace Project_2.Controllers

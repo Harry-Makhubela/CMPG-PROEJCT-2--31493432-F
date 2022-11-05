@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace CMPG_PROEJCT_2__31493432.Models
 {
-    public partial class connecetddofficesqldbContext : DbContext
+    public partial class ConnectedOfficeContext : DbContext
     {
-        public connecetddofficesqldbContext()
+        public ConnectedOfficeContext()
         {
         }
 
-        public connecetddofficesqldbContext(DbContextOptions<connecetddofficesqldbContext> options)
+        public ConnectedOfficeContext(DbContextOptions<ConnectedOfficeContext> options)
             : base(options)
         {
         }
