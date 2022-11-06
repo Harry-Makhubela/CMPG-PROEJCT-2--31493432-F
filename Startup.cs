@@ -13,6 +13,9 @@ using Microsoft.IdentityModel.Tokens;
 
 using Microsoft.OpenApi;
 using Microsoft.OpenApi.Models;
+using Project_2.Authentication;
+using Project_2.Models;
+//using Project_2.Controllers;
 using System.Text;
 
 
@@ -34,7 +37,6 @@ namespace Project_2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("name=ConnectionStrings:Def"));
 
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v2", new OpenApiInfo
@@ -66,11 +68,11 @@ namespace Project_2
 
 
             // For Entity Framework  
-            services.AddDbContext<Authentication.ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Def")));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Def")));
 
             // For Identity  
-            services.AddIdentity<Authentication.ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<Authentication.ApplicationDbContext>()
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
             // Adding Authentication  

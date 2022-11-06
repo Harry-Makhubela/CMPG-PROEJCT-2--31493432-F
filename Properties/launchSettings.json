@@ -4,27 +4,24 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:62707",
-      "sslPort": 44394
+      "applicationUrl": "http://localhost:60696",
+      "sslPort": 44320
     }
   },
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      "launchUrl": "swagger",
+      "environmentVariables": { "ASPNETCORE_ENVIRONMENT": "Development" }
     },
-    "CMPG_PROEJCT_2__31493432": {
+    "Project_2": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "swagger",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      "environmentVariables": { "ASPNETCORE_ENVIRONMENT": "Development" }
     }
   }
 }
+

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace CMPG_PROEJCT_2__31493432.Models
+namespace Project_2.Models
 {
     public partial class AspNetRoleClaims
     {
