@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using CMPG_PROEJCT_2__31493432.Models;
+using Project_2.Models;
 using Microsoft.AspNetCore.Authorization;
+using Project_2.Authentication;
 
 //using JWTAuthentication.Authentication;
 
@@ -17,9 +18,9 @@ namespace Project_2.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly ConnectedOfficeContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public CategoriesController(ConnectedOfficeContext context)
+        public CategoriesController(ApplicationDbContext context)
         {
             _context = context;
         }

@@ -18,9 +18,9 @@ namespace Project_2.Controllers
         [ApiController]
         public class ZonesController : ControllerBase
         {
-            private readonly ConnectedOfficeContext _context;
+            private readonly ApplicationDbContext _context;
 
-            public ZonesController(ConnectedOfficeContext context)
+            public ZonesController(ApplicationDbContext context)
             {
                 _context = context;
             }
